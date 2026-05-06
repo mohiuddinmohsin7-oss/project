@@ -8,7 +8,7 @@ function Register() {
     const nav = useNavigate();
     const handel = (e) => {
         e.preventDefault();
-        fetch("http://localhost:5000/register", {
+        fetch("https://skill-bridge-backend-su14.onrender.com/register", {
             method: "POST",
             headers: { "content-Type": "application/Json" },
             body: JSON.stringify({username: user, pass: pass})

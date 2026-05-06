@@ -8,7 +8,7 @@ function Login() {
   const navigate=useNavigate();
   const handelsubmit=(e)=>{
     e.preventDefault();
-    fetch("http://localhost:5000/auth",{
+    fetch("https://skill-bridge-backend-su14.onrender.com/auth",{
       method:"POST",
       headers: {"content-Type":"application/Json"},
       body: JSON.stringify({username,pass})
